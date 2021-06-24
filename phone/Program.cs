@@ -2,25 +2,22 @@
 
 namespace phone
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
+      Phone.Start();
+      Phone iphone = new Phone("7,2", "10000M", " iphone", "red", "   16G");
+      iphone.Describe();
+      Phone.Off();
 
-            aphone.START(); 
-            aphone a = new aphone("7,2","10000M", " iphone", "red", "   16G");
-            a.describe();
-            aphone.off();  
-            Console.WriteLine("---------------------------------------------");
-            aphone.START();
-            aphone b = new aphone("5,6","6000m","suamsung","black","2G");
-            b.describe();
-            aphone.off();
+      Console.WriteLine("---------------------------------------------");
 
-
-
-
-        }
+      Phone.Start();
+      Phone samsung = new Phone("5,6", "6000m", "suamsung", "black", "2G");
+      samsung.Describe();
+      Phone.Off();
     }
+  }
 }
 
